@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*{font-family: 'Fira Sans', sans-serif;}
+body{
+    background-color:#3D3D3D;
+    background-image: url("JapaneseWave_02.jpg");
+    background-size:cover;
+    
+   
+}
+
+/* images */
+
+.cover {
+    display:flex;
+    justify-content: center;
+    width: auto;
+     height: 1000px;
+    padding-bottom: 25px;
+}
+
+.shounen,.seinen,.shoujo,.josei {
+    display: inline;
+    width: auto;
+    max-height: 500px;
+    border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+.shounen,.seinen,.shoujo,.josei :hover {
+    box-shadow: 0 0 5px 3px rgba(0, 0, 18, 0.5);
+  }
+
+
+
+
+/* spacing */
+ html,body{
+    height:100%;
+    
+    ;
+   
+}
+
+#container{
+    min-height: 100%;
+}
+#main{
+    overflow: auto;
+    padding-bottom:50px;
+}
+
+
+#footer{
+
+    color: aliceblue;
+    background-color:#0f0f0f ;
+    position: relative;
+    height: 50px;
+
+ }
+
+/* typograph */
+    /* navigatie */
+nav ul,li { 
+    display: inline;
+    text-align: center; 
+    margin-right: 20px;
+    font-size: 24px ;
+    background-color: transparent;
+    
+
+}
+p,ol{ 
+     font-size: 14px;
+    line-height: 2em;
+    margin-bottom: 32px;
+    background-color:#22486b;
+   opacity: 85%;
+    color:aliceblue
+}
+    /* title */
+h1,nav ,#footer {
+    text-align: center;
+    font-size: 3em;
+
+    
+    
+
+}
+h2,h3{
+    margin-top: 20px;
+    font-size: 30px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: antiquewhite;
+    background-color: transparent;
+}
+
+
+a:hover{
+    color: fuchsia;
+    
+}
+
+.rubber,.shinigami,.shinobi,.alchemist,.sorcerer,.stand, .mercenary {
+    display: inline-flex;
+    
+    
+}
+
+
+
+
