@@ -40,8 +40,6 @@ body{
  html,body{
     height:100%;
     
-    ;
-   
 }
 
 #container{
@@ -85,10 +83,6 @@ p,ol{
 h1,nav ,#footer {
     text-align: center;
     font-size: 3em;
-
-    
-    
-
 }
 h2,h3{
     margin-top: 20px;
@@ -108,9 +102,6 @@ a:hover{
     
 }
 
-.rubber,.shinigami,.shinobi,.alchemist,.sorcerer,.stand, .mercenary {
-    display: inline-flex;
-    
     
 }
 
