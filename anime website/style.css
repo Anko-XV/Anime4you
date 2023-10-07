@@ -12,13 +12,19 @@ body{
 }
 
 /* images */
+img{
+    max-width: 100%;
+    height: auto;
+}
 
-.cover {
+#cover, .home{
     display:flex;
+    width:auto;
+    height: 750px;
     justify-content: center;
-    width: auto;
-     height: 1000px;
-    padding-bottom: 25px;
+   border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
 }
 
 .shounen,.seinen,.shoujo,.josei {
@@ -29,19 +35,25 @@ body{
   border-radius: 4px;
   padding: 5px;
 }
-.shounen,.seinen,.shoujo,.josei :hover {
+.shounen:hover,.seinen:hover,.shoujo:hover,.josei:hover {
     box-shadow: 0 0 5px 3px rgba(0, 0, 18, 0.5);
+
   }
 
+#header, #footer {
+    background-color: #22486b;
+    background-image: url("images/WallpaperDog-20511273.jpg");
+    background-size: cover;
 
-
+    
+}
 
 /* spacing */
  html,body{
     height:100%;
     
 }
-
+/* keeps footer at bottom of page */
 #container{
     min-height: 100%;
 }
@@ -62,48 +74,88 @@ body{
 
 /* typograph */
     /* navigatie */
-nav ul,li { 
-    display: inline;
-    text-align: center; 
-    margin-right: 20px;
-    font-size: 24px ;
-    background-color: transparent;
-    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333333ef;
+        
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        font-size: 16px;
+        display: inline;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover:not(.active) {
+        background-color: #5EF383;
+      }
+      
+      .active {
+        background-color: #f35eceb2;}
 
-}
-p,ol{ 
-     font-size: 14px;
+p, .jump { 
+      
+    display: inline-flex;
+    font-size: 14px;
     line-height: 2em;
+   padding-left: 10px;
     margin-bottom: 32px;
     background-color:#22486b;
    opacity: 85%;
-    color:aliceblue
+    color:aliceblue;
+    
 }
     /* title */
 h1,nav ,#footer {
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
 }
+
+h1,h2{
+    color:aliceblue;
+   
+}
+
 h2,h3{
     margin-top: 20px;
     font-size: 30px;
     
 }
 
-a{
+h3 a, footer a{
     text-decoration: none;
     color: antiquewhite;
-    background-color: transparent;
+     background-color:rgba(220, 20, 60, 0.452) ;
+     padding-left: 15px;
 }
-
 
 a:hover{
-    color: fuchsia;
+    color: rgb(0, 0, 0);
     
 }
-
-    
-}
+/* animations */
+.bounce{
+    animation: bounce 2s ease infinite;
+  }
+  @keyframes bounce {
+      70% { transform:translateY(0%); }
+      80% { transform:translateY(-15%); }
+      90% { transform:translateY(0%); }
+      95% { transform:translateY(-7%); }
+      97% { transform:translateY(0%); }
+      99% { transform:translateY(-3%); }
+      100% { transform:translateY(0); }
+  }
 
 
 
